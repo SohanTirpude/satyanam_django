@@ -1,0 +1,7 @@
+{% extends 'users/base.html' %}
+{% block body %}
+{% for post in posts %}
+<h2>Subject: {{post.subject}}</h2>
+<h2>Description: {{post.description}}</h2>
+{% endfor %}
+{% endblock %}
